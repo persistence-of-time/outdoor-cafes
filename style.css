@@ -28,7 +28,7 @@ html, body {
 #banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/002-GG4D3687-Web_Ready.jpg");
     background-size: cover;
-    background-position: center top;
+    background-position: center;
     height: 700px;
     width: 100%;
   }
@@ -36,16 +36,20 @@ html, body {
   #banner .content h1 {
     border: 3px solid white;
     position: relative;
-    top: 250px;
-    width: 350px;
+    top: 150px;
+    max-width: 550px;
+    min-width: 175px;
     margin: auto;
   }
 
   #main {
     margin: 0 auto;
-    padding: 40px;
+    padding: 12px;
     text-align: center;
-    width: 350px;
+    max-width: 550px;
+    min-width: 350px;
+    margin: 0px center;
+  
   }
 
   h1 {
@@ -56,18 +60,16 @@ html, body {
   }
   
   h2 {
-    border: 1px dotted #ef767a;
+
     color: #ef767a;
     font-size: 14px;
-    line-height: 48px;
-    padding: 20px 30px;
-    margin: 30px 20px;
+    line-height: 22px;
     text-align: center;
   }
   
   h3 {
     color: #456990;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 700;
     padding: 20px 10px;
   }
@@ -81,33 +83,68 @@ img {
     display: block;
     width: 100%;
 }
-.byline {
-    border-bottom: 1px solid #ef767a;
+.byline { 
     color: #ef767a;
     font-size: 18px;
     font-weight: 200;
+    text-align: left;
+    line-height: 22px;
+    line-break: loose;
+    margin: 44 auto;
+    padding: 12px;
     text-align: center;
+    max-width: 550px;
+    min-width: 350px;
+    margin: 0px center;
 }
 .container {
     max-width: 800px;
+    box-align: center;
     margin: 0 auto;
-    padding: 10px;
+    padding: 0; 
 }
 
 p {
     color: #212121;
     font-size: 16px;
     font-weight: 300;
-    line-height: 20px;
+    line-height: 22px;
+    line-break: loose;
     position: relative;
     border: 0;
-    margin: 0;
+    margin: 15px;
     padding: 0;
   }
+  p:first-of-type:first-letter {
+    float: left;
+    font-size: 45px;
+    line-height: .9;
+    font-weight: bold;
+    margin-right: 9px;
+}
 .icon {
     font-size: 3rem;
     text-align: center;
     padding: 22px;
+}
+
+#icon-cap {
+    font-size: 14px;
+    text-align: center;
+    font-style: italic;
+}
+
+.caption {
+  color: #212121;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  font-style: italic;
+}
+.caption-2 {
+  font-size: 12px;
+  text-align: center;
+  font-style: italic;
 }
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
